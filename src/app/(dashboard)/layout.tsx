@@ -1,11 +1,10 @@
-import '../../styles/global.css'
+import '../../../styles/global.css'
 
 export default function DashboardRootLayout({ children }: any) {
     return (
         <html lang="en">
             <head />
-            <body className="">
-                {children}
+            <body className="h-screen w-screen rainbow-mesh p-6">
             </body>
         </html>
     )
