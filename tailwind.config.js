@@ -10,6 +10,8 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inter)"],
         roboto: ["Roboto", "sans-serif"],
+        TriplettCGBlack: ["TriplettCGBlack", "sans-serif"],
+        
       }
       ,
       backgroundImage: {

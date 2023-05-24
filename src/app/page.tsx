@@ -1,6 +1,8 @@
+import Image from "next/image"
+
 const Navbar = () => {
     return (
-        <body className="bg-slate-200">
+        <body className="bg-slate-200 font-roboto">
             <nav className="w-screen h-20 fix shadow bg-black text-slate-200
              box-border md:flex md:items-center md:justify-between p-5">
                 <div className="flex justify-between items-center">
@@ -51,7 +53,14 @@ const Navbar = () => {
                     and other popular technologies.
                 </span>
             </p>
-                <div className="md:ml-52 md:w-1/2 m-4 w-4/5 h-0.5 bg-black"></div>
+            <div className="md:ml-52 md:w-1/2 m-4 w-4/5 h-0.5 bg-black"></div>
+            <div className="">
+                <h3 className="md:ml-52 mb-0 md:w-1/2 m-4 w-4/5 text-xl font-extrabold font-TriplettCGBlack">Recent Articles, letters & posts</h3>
+                <div className="flex inline-block max-w-fit  cursor-pointer">
+                    <a className="ml-4 mb-4 text-lg text-violet-600 ">view all</a>
+                    <Image className="mx-2 mb-4 " alt="its just an arrow" height="12" width="12" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzZiMWZmZjsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggaWQ9ImljX2Fycm93X2ZvcndhcmRfMjRweCIgY2xhc3M9ImNscy0xIiBkPSJNMTIsNCwxMC41OSw1LjQxLDE2LjE3LDExSDR2MkgxNi4xN2wtNS41OCw1LjU5TDEyLDIwbDgtOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00IC00KSIvPgo8L3N2Zz4K"></Image>
+                </div>
+            </div>
         </body>
     )
 }
