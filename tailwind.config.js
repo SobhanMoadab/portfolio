@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)"],
+        roboto: ["Roboto", "sans-serif"],
       }
       ,
       backgroundImage: {
