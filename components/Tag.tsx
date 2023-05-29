@@ -1,18 +1,14 @@
-import React from 'react'
+import { twMerge } from 'tailwind-merge'
 
-const Tag = () => {
+type TagProps = {
+    name: string;
+
+}
+const Tag = (props: TagProps) => {
+    let displayName = ''
+    const className = twMerge('py-1 px-3 mb-2 mr-2 text-sm inline-block text-slate-50 bg-black cursor-pointer w-fit', displayName)
     return (
-        // tag container
-        <a className='py-1 px-3 mb-2 mr-2' style={{
-            ["padding" as any]: "4px 10px",
-            ["margin-bottom" as any]: "0.5rem",
-            ["margin-right" as any]: "0.5rem",
-            ["cursor" as any]: "pointer",
-            ["background" as any]: "#000",
-            ["color" as any]: "#fff",
-            ["font-size" as any]: ".9rem",
-            ["display" as any]: "inline-block",
-        }}>testing</a>
+        <a className={className} >{props.name}</a>
     )
 }
 

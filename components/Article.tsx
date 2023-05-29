@@ -8,23 +8,24 @@ type ArticleProps = {
 }
 const Article = (props: ArticleProps) => {
     return (
-        <div className='p-5 border-2 border-gray-950'>
-            <div>
-                <Image style={{ ["border-radius" as any]: "8px" }} src="/1.jpg"
-                    height={props.height ?? 335} width={props.width ?? 335} alt="article card image">
-                </Image>
-            </div>
-            <div className='my-20'>
+        <div className='p-5 border-gray-950  xxs:w-1/2'>
+            <Image className='w-full rounded-md' src="/1.jpg"
+                height={props.height ?? 335} width={props.width ?? 335} alt="article card image">
+            </Image>
+            <div className=''>
+                <a className='text-violet-600 mt-2 mb-3 block' href=''>
+                    Tests are a waste of time.
+                </a>
                 <a className='text-xl' href=''>
                     Tests are a waste of time.
                 </a>
-                <div className='block'>
-                    <Tag />
-                    <Tag />
-                    <Tag />
-                    <Tag />
-                    <Tag />
-                    <Tag />
+                <div className='flex flex-wrap '>
+                    <Tag name='software essentialism'/>
+                    <Tag name='negative value'/>
+                    <Tag name='business'/>
+                    <Tag name='three ways'/>
+                    <Tag name='architecture'/>
+                    <Tag name='rdd'/>
                 </div>
             </div>
         </div>

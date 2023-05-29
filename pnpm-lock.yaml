@@ -64,8 +64,11 @@ dependencies:
   react-feather:
     specifier: 2.0.10
     version: 2.0.10(react@18.2.0)
+  tailwind-merge:
+    specifier: ^1.12.0
+    version: 1.12.0
   tailwindcss:
-    specifier: 3.3.2
+    specifier: ^3.3.2
     version: 3.3.2(ts-node@10.9.1)
   typescript:
     specifier: 5.0.4
@@ -2916,6 +2919,10 @@ packages:
     resolution: {integrity: sha512-7S0AaDitt+Fjy9m3v0GrQ/KZrCswNDD25SSXX9U/HIB5h9lk0ImSkq/VVcnzu78cRQxR0fFfvHYFdfcqN3dCGA==}
     dependencies:
       find-up: 5.0.0
+    dev: false
+
+  /tailwind-merge@1.12.0:
+    resolution: {integrity: sha512-Y17eDp7FtN1+JJ4OY0Bqv9OA41O+MS8c1Iyr3T6JFLnOgLg3EvcyMKZAnQ8AGyvB5Nxm3t9Xb5Mhe139m8QT/g==}
     dev: false
 
   /tailwindcss@3.3.2(ts-node@10.9.1):
