@@ -1,7 +1,16 @@
+'use client'
+
 import Link from 'next/link'
 import '../../styles/global.css'
+import Overlay from '../../components/Overlay'
+import React from 'react'
 
 export default function DashboardRootLayout({ children }: any) {
+    const [showOverlay, setShowOverlay] = React.useState(false)
+    function toggleOverlay() {
+        setShowOverlay(!showOverlay)
+    }
+
     return (
         <html lang="en">
             <head />
@@ -12,7 +21,36 @@ export default function DashboardRootLayout({ children }: any) {
                         <Link className="text-2xl font-mono md:ml-0" href='/'>
                             Sobhan Moadab
                         </Link>
-                        <span className="mx-2 cursor-pointer md:hidden block">
+                        {showOverlay &&
+                            <div className="p-14 bg-black flex flex-col fixed inset-0 z-40 cursor-pointer font-light">
+                                <div className="mx-2 my-3 md:my-0 p-1">
+                                    <div className="text-4xl hover:text-cyan-700 font-normal duration-500" onClick={toggleOverlay}>
+                                        ~
+                                    </div>
+                                </div>
+                                <div className="mx-2 my-3 md:my-0 p-1">
+                                    <Link className="text-4xl hover:text-cyan-700 font-normal duration-500" href='/articles'>
+                                        /articles
+                                    </Link>
+                                </div>
+                                <div className="mx-2 my-3 md:my-0 p-1">
+                                    <Link className="text-4xl hover:text-cyan-500 font-normal duration-500" href='/projects'>
+                                        /projects
+                                    </Link>
+                                </div>
+                                <div className="mx-2 my-3 md:my-0 p-1">
+                                    <Link className="text-4xl hover:text-cyan-300 font-normal duration-500" href='https://github.com/SobhanMoadab'>
+                                        /github
+                                    </Link>
+                                </div>
+                                <div className="mx-2 my-3 md:my-0 p-1">
+                                    <Link className="text-4xl hover:text-cyan-100 font-normal duration-500" href='/contact'>
+                                        /contact
+                                    </Link>
+                                </div>
+                            </div>
+                        }
+                        <span className="mx-2 cursor-pointer md:hidden block z-50" onClick={toggleOverlay}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-9 h-9">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
