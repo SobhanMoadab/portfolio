@@ -2,14 +2,22 @@
 
 import Link from 'next/link'
 import '../../styles/global.css'
-import Overlay from '../../components/Overlay'
 import React from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function DashboardRootLayout({ children }: any) {
     const [showOverlay, setShowOverlay] = React.useState(false)
-    function toggleOverlay() {
+    const pathName = usePathname()
+
+    function toggleOverlay(e: React.MouseEvent) {
         setShowOverlay(!showOverlay)
+        console.log({ pathName: pathName })
     }
+
+
+    React.useEffect(() => {
+        setShowOverlay(false)
+    }, [pathName])
 
     return (
         <html lang="en">
@@ -24,9 +32,9 @@ export default function DashboardRootLayout({ children }: any) {
                         {showOverlay &&
                             <div className="p-14 bg-black flex flex-col fixed inset-0 z-40 cursor-pointer font-light">
                                 <div className="mx-2 my-3 md:my-0 p-1">
-                                    <div className="text-4xl hover:text-cyan-700 font-normal duration-500" onClick={toggleOverlay}>
+                                    <Link href='/' className="text-4xl hover:text-cyan-700 font-normal duration-500" onClick={toggleOverlay}>
                                         ~
-                                    </div>
+                                    </Link>
                                 </div>
                                 <div className="mx-2 my-3 md:my-0 p-1">
                                     <Link className="text-4xl hover:text-cyan-700 font-normal duration-500" href='/articles'>
