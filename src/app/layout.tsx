@@ -25,8 +25,8 @@ export default function DashboardRootLayout({ children }: any) {
             <body className="font-roboto w-full">
                 <nav className="w-full h-20 fix shadow bg-black text-slate-200
              box-border md:flex md:items-center md:justify-between p-5">
-                    <div className="flex justify-between items-center">
-                        <Link className="text-2xl font-mono md:ml-0" href='/'>
+                    <div className="flex justify-between items-center w-full">
+                        <Link className="text-2xl font-mono xl:ml-40" href='/'>
                             Sobhan Moadab
                         </Link>
                         {showOverlay &&
