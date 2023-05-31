@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Tag from './tag'
+import Tag from './Tag'
 
 type ArticleProps = {
     height?: number,
