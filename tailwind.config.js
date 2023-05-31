@@ -15,7 +15,12 @@ module.exports = {
       'xxs': '535px',
       ...defaultTheme.screens,
     },
-    extend: {},
+    extend: {
+      colors: {
+        'green-1': 'rgba(124, 231, 123, 0.28)',
+        'green-2': '#0bb40a'
+      }
+    },
   },
   variants: {
     extend: {},
