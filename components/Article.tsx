@@ -8,7 +8,7 @@ type ArticleProps = {
 }
 const Article = (props: ArticleProps) => {
     return (
-        <div className='p-5 border-gray-950  xxs:w-1/2'>
+        <div className='p-2 border-gray-950  xxs:w-1/2'>
             <Image className='w-full rounded-md' src="/1.jpg"
                 height={props.height ?? 335} width={props.width ?? 335} alt="article card image">
             </Image>
@@ -19,7 +19,7 @@ const Article = (props: ArticleProps) => {
                 <a className='text-xl' href=''>
                     Tests are a waste of time.
                 </a>
-                <div className='flex flex-wrap '>
+                <div className='flex flex-wrap mt-2'>
                     <Tag name='software essentialism'/>
                     <Tag name='negative value'/>
                     <Tag name='business'/>

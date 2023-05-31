@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import ArticleCategory from '../../../components/article-category'
+import Article from '../../../components/article'
 
 const Articles = () => {
   return (
@@ -16,6 +17,15 @@ const Articles = () => {
           <ArticleCategory name='Enterprise Node + TypeScript' />
           <ArticleCategory name='Design' />
           <ArticleCategory name='Domain-Driven Design' />
+        </div>
+        <div>
+          <input className='border-4 border-gray-300 p-2 w-full mb-2' type="text" placeholder='Type to filter posts...'></input>
+          <section className="flex flex-wrap flex-col justify-center items-center xxs:flex-row w-full">
+            <Article />
+            <Article />
+            <Article />
+            <Article />
+          </section>
         </div>
       </section>
     </div>
