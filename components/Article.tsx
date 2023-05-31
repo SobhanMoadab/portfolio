@@ -8,7 +8,7 @@ type ArticleProps = {
 }
 const Article = (props: ArticleProps) => {
     return (
-        <div className='p-2 border-gray-950  xxs:w-1/2'>
+        <div className='p-1 border-gray-950  xxs:w-1/2'>
             <Image className='w-full rounded-md' src="/1.jpg"
                 height={props.height ?? 335} width={props.width ?? 335} alt="article card image">
             </Image>
