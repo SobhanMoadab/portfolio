@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import ArticleCategory from '../../../components/article-category'
 import Article from '../../../components/article'
 
