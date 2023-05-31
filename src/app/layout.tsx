@@ -88,7 +88,7 @@ export default function DashboardRootLayout({ children }: any) {
                         </li>
                     </ul>
                 </nav>
-                <main className="flex w-full p-8 max-w-[980px] mx-auto">
+                <main className="flex w-full p-1 max-w-[980px] mx-auto my-0">
                     {children}
                 </main>
             </body>

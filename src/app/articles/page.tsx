@@ -23,7 +23,7 @@ const Articles = () => {
           </div>
           <div>
             <input className='border-4 border-gray-300 p-2 w-full mb-2' type="text" placeholder='Type to filter posts...'></input>
-            <section className="flex flex-wrap flex-col justify-center items-center xxs:flex-row w-full">
+            <section className="flex flex-wrap flex-col xxs:flex-row">
               <Article />
               <Article />
               <Article />
