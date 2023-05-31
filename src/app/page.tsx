@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Article from "../../components/article"
+import Article from "../../components/Article"
 
 const Navbar = () => {
     return (

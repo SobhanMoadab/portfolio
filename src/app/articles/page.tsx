@@ -1,6 +1,6 @@
 import React from 'react'
 import ArticleCategory from '../../../components/article-category'
-import Article from '../../../components/article'
+import Article from '../../../components/Article'
 
 const Articles = () => {
   return (
