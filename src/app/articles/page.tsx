@@ -1,11 +1,17 @@
 import React from 'react'
 import ArticleCategory from '../../../components/article-category'
 import Article from '../../../components/Article'
+import { Roboto } from 'next/font/google'
+
+const roboto = Roboto({
+  weight: '500',
+  subsets: ['latin']
+})
 
 const Articles = () => {
   return (
     <>
-      <div className='h-full w-full md:flex'>
+      <div className={`h-full w-full md:flex ${roboto.className}`}>
         <section className='mb-6 md:w-3/ md:left'>
           <h2 className="text-2xl font-bold text-left mb-6 font-extrabold tracking-wide">Articles</h2>
           <div className="md:w-2/4 hidden md:block font-serif">

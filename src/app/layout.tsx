@@ -1,9 +1,11 @@
 'use client'
 
+import { Roboto } from 'next/font/google'
 import Link from 'next/link'
 import '../../styles/global.css'
 import React from 'react'
 import { usePathname } from 'next/navigation'
+
 
 export default function DashboardRootLayout({ children }: any) {
     const [showOverlay, setShowOverlay] = React.useState(false)
@@ -88,7 +90,7 @@ export default function DashboardRootLayout({ children }: any) {
                         </li>
                     </ul>
                 </nav>
-                <main className="flex w-full p-1 max-w-[980px] mx-auto my-5 px-4">
+                <main className="flex w-full p-1 max-w-[980px] mx-auto my-5 px-4" >
                     {children}
                 </main>
             </body>

@@ -6,9 +6,12 @@ type ArticleProps = {
     height?: number,
     width?: number,
 }
+
+
+
 const Article = (props: ArticleProps) => {
     return (
-        <div className='mb-2  xxs:w-1/2 md:w-2/5'>
+        <div className='mb-2 xxs:w-1/2 md:w-2/5'>
             <Image className='rounded-md w-full' src="/1.jpg"
                 height={props.height ?? 350} width={props.width ?? 300} alt="article card image">
             </Image>
