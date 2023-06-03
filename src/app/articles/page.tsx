@@ -7,7 +7,7 @@ const Articles = () => {
     <>
       <div className='h-full w-full md:flex'>
         <section className='mb-6 md:w-3/ md:left'>
-          <h2 className="text-3xl font-bold text-left mb-6 font-extrabold tracking-wide">Articles</h2>
+          <h2 className="text-2xl font-bold text-left mb-6 font-extrabold tracking-wide">Articles</h2>
           <div className="md:w-2/4 hidden md:block font-serif">
             Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit, aspernatur at eius dolorum eos sapient
           </div>
