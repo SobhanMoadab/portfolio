@@ -38,7 +38,7 @@ const Navbar = () => {
                         <Image className="mx-2 mb-4 " alt="its just an arrow" height="12" width="12" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzZiMWZmZjsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggaWQ9ImljX2Fycm93X2ZvcndhcmRfMjRweCIgY2xhc3M9ImNscy0xIiBkPSJNMTIsNCwxMC41OSw1LjQxLDE2LjE3LDExSDR2MkgxNi4xN2wtNS41OCw1LjU5TDEyLDIwbDgtOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00IC00KSIvPgo8L3N2Zz4K"></Image>
                     </div>
                 </div>
-                <section className="flex flex-wrap flex-col justify-between items-center xxs:flex-row px-4">
+                <section className="flex flex-wrap flex-col justify-between items-center xxs:flex-row px-2">
                     <Article />
                     <Article />
                     <Article />
